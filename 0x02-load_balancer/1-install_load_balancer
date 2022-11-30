@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #Bash script installs HAproxy
-addlines="frontend http_web\n\tbind *:80\n\tmode http\n\tdefault_backend custom_backend\nbackend
-custom_backend\n\tbalance roundrobin\n\toption forwardfor\n\tserver
-4220-web-01 34.234.65.70:80 check\n\tserver 4220-web-02 54.165.78.34:80 check"
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
+addlines="frontend http_web\n\tbind *:80\n\tmode http\n\tdefault_backend custom_backend\nbackend
+custom_backend\n\tbalance roundrobin\n\toption forwardfor\n\tserver
+4220-web-01 34.234.65.70:80 check\n\tserver 4220-web-02 54.165.78.34:80 check"
 echo ENABLED=1 | sudo tee -a /etc/default/haproxy
 echo -e $addlines | sudo tee -a /etc/haproxy/haproxy.cfg
 echo "web-01"
