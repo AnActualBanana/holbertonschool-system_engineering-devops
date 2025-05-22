@@ -35,6 +35,11 @@ This project focuses on setting up and managing a web server using **Nginx** on 
 ./1-install_nginx_web_server
 ```
 
+Transfer a File to Your Server
+```bash
+scp filename user@your_server_ip:/path/to/destination
+```
+
 📌 Note
 This project is part of the System Engineering & DevOps curriculum at Holberton School, aimed at building foundational skills in server administration, web hosting, and DevOps practices.
 
