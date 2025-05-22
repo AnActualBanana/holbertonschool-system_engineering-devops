@@ -38,5 +38,5 @@ This project focuses on setting up and managing a web server using **Nginx** on 
 📌 Note
 This project is part of the System Engineering & DevOps curriculum at Holberton School, aimed at building foundational skills in server administration, web hosting, and DevOps practices.
 
-👤 Author
+## Author
 AnActualBanana
