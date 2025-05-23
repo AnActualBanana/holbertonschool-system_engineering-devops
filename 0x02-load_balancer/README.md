@@ -36,9 +36,9 @@ add_header X-Served-By $hostname;
 ## Install and Configure HAProxy
 To install and configure HAProxy as a load balancer:
 
-bash
+```bash
 sudo apt-get update
 sudo apt-get install -y haproxy
-
+```
 ## Author
 Logan McClain
